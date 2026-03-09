@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(brew install:*)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Bash(curl -sL https://github.com/cli/cli/releases/download/v2.65.0/gh_2.65.0_macOS_arm64.tar.gz -o /tmp/gh.tar.gz)",
+      "Bash(tar -xzf /tmp/gh.tar.gz -C /tmp/)",
+      "Read(//tmp/gh_2.65.0_macOS_arm64/**)",
+      "Bash(curl:*)",
+      "Bash(unzip -q /tmp/gh.zip -d /tmp/gh_extracted)",
+      "Read(//tmp/**)",
+      "Bash(~/bin/gh auth:*)",
+      "Bash(~/bin/gh repo:*)",
+      "Bash(git:*)"
+    ]
+  }
+}
